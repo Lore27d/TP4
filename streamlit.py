@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import seaborn as sns
+#import seaborn as sns
 from matplotlib import pyplot as plt
 import pickle
 
@@ -28,8 +28,7 @@ with open('./df.pkl', 'rb') as f_df:
 
 a4_dims = (11.7, 8.27)
 fig, ax = plt.subplots(figsize=a4_dims)
-sns.lineplot(x='Year' ,y='temp_avg', data = df, markers=True, dashes=False)
-
+#sns.lineplot(x='Year' ,y='temp_avg', data = df, markers=True, dashes=False)
 
 plt.yticks([10, 15, 20, 25])
 
