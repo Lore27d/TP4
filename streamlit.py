@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 #import seaborn as sns
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 import pickle
 
 st.title("Predicción de Temperatura")
@@ -27,10 +27,10 @@ with open('./df.pkl', 'rb') as f_df:
         df = pickle.load(f_df)
 
 a4_dims = (11.7, 8.27)
-fig, ax = plt.subplots(figsize=a4_dims)
+#fig, ax = plt.subplots(figsize=a4_dims)
 #sns.lineplot(x='Year' ,y='temp_avg', data = df, markers=True, dashes=False)
 
-plt.yticks([10, 15, 20, 25])
+#plt.yticks([10, 15, 20, 25])
 
 
 
